@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docx2everything"
+version = "1.0.0"
+description = "A pure python-based utility to extract and convert DOCX files to various formats including plain text and markdown"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.6"
+authors = [
+    {name = "sudipnext"}
+]
+maintainers = [
+    {name = "sudipnext"}
+]
+keywords = ["python", "docx", "text", "markdown", "convert", "extract"]
+urls = {
+    Homepage = "https://parajulisudip.com.np",
+    Repository = "https://github.com/sudipnext/docx2everything"
+}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Text Processing :: Markup",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.scripts]
+docx2everything = "docx2everything.cli:main"
+
+[tool.setuptools]
+packages = ["docx2everything", "docx2everything.utils", "docx2everything.parsers", "docx2everything.converters"]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md"]
