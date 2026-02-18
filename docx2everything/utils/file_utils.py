@@ -21,6 +21,12 @@ def extract_images(zipf, filelist, img_dir):
     if img_dir is None:
         return
     
+    # Create directory if it doesn't exist
+    try:
+        os.makedirs(img_dir, exist_ok=True)
+    except (OSError, IOError):
+        return
+    
     for fname in filelist:
         _, extension = os.path.splitext(fname)
         if extension.lower() in [".jpg", ".jpeg", ".png", ".bmp", ".gif"]:

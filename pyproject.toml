@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "docx2everything"
-version = "1.0.0"
+version = "1.1.0"
 description = "A pure python-based utility to extract and convert DOCX files to various formats including plain text and markdown"
 readme = "README.md"
 license = {text = "MIT"}
@@ -16,10 +16,6 @@ maintainers = [
     {name = "sudipnext"}
 ]
 keywords = ["python", "docx", "text", "markdown", "convert", "extract"]
-urls = {
-    Homepage = "https://parajulisudip.com.np",
-    Repository = "https://github.com/sudipnext/docx2everything"
-}
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -34,6 +30,10 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
+
+[project.urls]
+Homepage = "https://parajulisudip.com.np"
+Repository = "https://github.com/sudipnext/docx2everything"
 
 [project.scripts]
 docx2everything = "docx2everything.cli:main"

@@ -95,14 +95,23 @@ markdown = docx2everything.process_to_markdown("document.docx", img_dir="images/
 
 - ✅ Plain text extraction
 - ✅ Markdown conversion with preserved structure:
-  - Tables → Markdown tables
-  - Lists → Bulleted/numbered lists
-  - Headings → Markdown headings (#, ##, ###)
+  - Tables → Markdown tables (with merged cells support, alignment hints)
+  - Lists → Bulleted/numbered lists (with proper sequence tracking)
+  - Headings → Markdown headings (#, ##, ###, etc.) with custom style detection
   - Formatting → Bold, italic, strikethrough
   - Links → Markdown links
   - Images → Markdown image references
+  - Footnotes → Markdown footnote references `[^1]`
+  - Endnotes → Markdown endnote references `[^1]`
+  - Comments → Inline HTML comments with author info
+  - Charts → Chart placeholders with type and metadata `*[Chart: Title (Chart Type)]*`
+  - Page breaks → HTML comments `<!-- Page Break -->`
+  - Section breaks → HTML comments `<!-- Section Break -->`
 - ✅ Image extraction
 - ✅ Header and footer support
+- ✅ Custom style detection (parses styles.xml for better heading detection)
+- ✅ Table formatting (column alignment detection and hints)
+- ✅ Robust error handling for malformed DOCX files
 
 ## Requirements
 

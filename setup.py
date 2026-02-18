@@ -12,7 +12,7 @@ setup(
     name='docx2everything',
     packages=['docx2everything', 'docx2everything.utils', 
               'docx2everything.parsers', 'docx2everything.converters'],
-    version='1.0.0',
+    version='1.1.0',
     description='A pure python-based utility to extract and convert DOCX files '
                 'to various formats including plain text and markdown.',
     author='sudipnext',

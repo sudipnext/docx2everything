@@ -63,9 +63,19 @@ Thumbs.db
 # Project specific
 *.md
 !README.md
+!PUBLISH.md
 *.txt
 !LICENSE.txt
-demo.*
-!demo.docx
 test_without_install.sh
 images/
+test_images*/
+images_*/
+*_output.md
+test_output.md
+.env
+
+# Test files
+test_files/
+dist/
+bin/
+.venv/

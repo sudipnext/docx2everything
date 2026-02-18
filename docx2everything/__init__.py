@@ -8,7 +8,7 @@ Maintainer: sudipnext
 from .core import process, process_to_markdown
 from .cli import process_args
 
-__version__ = '1.0.0'
+__version__ = '1.1.0'
 __author__ = 'sudipnext'
 
 __all__ = ['process', 'process_to_markdown', 'process_args']
